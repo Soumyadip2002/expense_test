@@ -1,0 +1,19 @@
+.mgn_top{
+    margin-top: 20px;
+}
+
+.mgn_center{
+    display: flex;
+    justify-content: center; /* Horizontal alignment */
+    /*align-items: center;  Vertical alignment */
+     /*height: 100vh; Full viewport height */
+}
+
+.mgn_auto{
+    margin: 0 auto;
+}
+
+.for_h2{
+    display: flex;
+    justify-content: center;
+}

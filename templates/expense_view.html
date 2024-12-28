@@ -1,0 +1,36 @@
+{% extends 'home.html' %}
+{% block content %}
+<div class="container">
+    <div class="row">
+        <h2 class="for_h2">
+            HERE IS YOUR EXPENSES:
+        </h2>
+    </div>
+    <div class="row">
+        <table class="table table-striped">
+            <thead>
+              <tr>
+                <th scope="col">Date</th>
+                <th scope="col">Amount</th>
+                <th scope="col">Category</th>
+                <th scope="col">Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              {% for expenses in expense_all %}  
+
+              <tr>
+                <td>{{ expenses[0] }}</td>
+                <td>{{expenses[1]}}</td>
+                <td>{{expenses[3]}}</td>
+                <td>{{expenses[2]}}</td>
+              </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+    </div>
+    <div class="row">
+        <a href="/expenses" class="for_h2"><button type="button" class="btn btn-primary">Add New Expense</button></a>
+    </div>
+</div>
+{% endblock %}
